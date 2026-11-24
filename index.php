@@ -4,272 +4,174 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <title>Nailé Beauty Studio</title>
 
-    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&display=swap" rel="stylesheet">
 
-    <!-- CSS -->
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/style.css?v=11">
 </head>
 <body>
 
-    <!-- NAVBAR -->
-    <header class="navbar">
-        <div class="container nav-container">
+<!-- NAVBAR -->
+<header class="navbar">
+    <a href="#home" class="logo">
+        Nailé<span>.</span>
+        <small>BEAUTY STUDIO</small>
+    </a>
 
-            <a href="#home" class="logo">
-                Nailé<span>.</span>
-                <small>BEAUTY STUDIO</small>
+    <nav>
+        <a href="#home" class="active">Home</a>
+        <a href="#services">Services</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#booking">Booking</a>
+        <a href="#about">About</a>
+    </nav>
+
+    <div class="nav-buttons">
+        <a href="customer/login.php">Login</a>
+        <a href="customer/register.php">Register</a>
+    </div>
+</header>
+
+<main>
+
+<!-- HOME -->
+<section class="naile-hero" id="home">
+    <div class="naile-hero-content">
+        <span class="naile-welcome">✦ WELCOME TO</span>
+
+        <h1>Nailé Beauty Studio<span class="hero-heart">♡</span></h1>
+
+        <p>
+            Nail Art, Manicure, Pedicure, dan Eyelash
+            dalam satu studio kecantikan.
+        </p>
+
+        <div class="naile-hero-buttons">
+            <a href="#booking" class="naile-button-primary">
+                ▦ Booking Sekarang
             </a>
-
-            <nav class="nav-menu" id="navMenu">
-                <a href="#home" class="active">Home</a>
-                <a href="#about">About</a>
-                <a href="#services">Services</a>
-                <a href="#gallery">Gallery</a>
-                <a href="#contact">Contact</a>
-            </nav>
-
-            <a href="#contact" class="nav-button">
-                Book Now
+            <a href="#services" class="naile-button-outline">
+                ▦ Lihat Layanan
             </a>
-
-            <button class="menu-toggle" id="menuToggle"
-                    aria-label="Buka menu navigasi">
-                ☰
-            </button>
-
         </div>
-    </header>
+    </div>
 
+    <div class="naile-hero-photo" role="img"
+         aria-label="Nail art pink dengan hiasan bunga">
+    </div>
+</section>
 
-    <!-- HERO SECTION -->
-    <section class="hero" id="home">
-        <div class="container hero-container">
+<!-- SERVICES -->
+<section class="naile-services" id="services">
+    <div class="naile-section-heading">
+        <h2>Our Beauty Services</h2>
+        <p>Pilih perawatan kecantikan sesuai kebutuhanmu ♡</p>
+    </div>
 
-            <div class="hero-content">
-                <span class="subtitle">
-                    ✨ YOUR BEAUTY, OUR PASSION
-                </span>
+    <div class="naile-service-grid">
 
-                <h1>
-                    Beauty Begins<br>
-                    at Your <span>Fingertips.</span>
-                </h1>
-
-                <p>
-                    Discover your beauty with our special treatments.
-                    Let us make every detail of your nails and beauty
-                    more beautiful and memorable.
-                </p>
-
-                <div class="hero-buttons">
-                    <a href="#services" class="primary-button">
-                        Explore Services →
-                    </a>
-
-                    <a href="#about" class="secondary-button">
-                        Discover More
-                    </a>
-                </div>
-
-                <div class="hero-note">
-                    <span>♡</span>
-                    A little self-care goes a long way.
-                </div>
-            </div>
-
-            <div class="hero-decoration">
-                <div class="hero-image">
-                    <span class="image-caption">
-                        Feel Beautiful, Feel Confident
-                    </span>
-                </div>
-
-                <div class="floating-card">
-                    <span>♡</span>
-                    <div>
-                        <strong>Love Yourself</strong>
-                        <small>You deserve the best.</small>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-    </section>
-
-
-    <!-- ABOUT SECTION -->
-    <section class="about section-padding" id="about">
-        <div class="container about-content">
-
-            <div class="section-heading">
-                <span class="subtitle">ABOUT NAILÉ</span>
-
-                <h2>
-                    A Special Place<br>
-                    for Your <span>Beauty.</span>
-                </h2>
-            </div>
-
-            <div class="about-description">
-                <p>
-                    Nailé Beauty Studio hadir sebagai tempat untuk
-                    merawat dan mempercantik diri melalui berbagai
-                    layanan kecantikan dengan sentuhan profesional.
-                </p>
-
-                <p>
-                    Kami percaya bahwa setiap perempuan berhak
-                    merasa cantik, percaya diri, dan istimewa.
-                </p>
-            </div>
-
-        </div>
-    </section>
-
-
-    <!-- SERVICES SECTION -->
-    <section class="services section-padding" id="services">
-        <div class="container">
-
-            <div class="section-heading center">
-                <span class="subtitle">WHAT WE OFFER</span>
-
-                <h2>
-                    Our Beauty <span>Services</span>
-                </h2>
-
-                <p>
-                    Discover the perfect treatment for your beauty.
-                </p>
-            </div>
-
-            <div class="service-grid">
-
-                <div class="service-card">
-                    <div class="service-icon">💅</div>
+        <article class="naile-service-card">
+            <img src="assets/images/02-nail-art.jpg" alt="Nail Art">
+            <div class="naile-service-info">
+                <div>
                     <h3>Nail Art</h3>
-                    <p>
-                        Express your style with beautiful and
-                        creative nail designs.
-                    </p>
-                    <a href="#contact">Learn More →</a>
+                    <p>Hiasan kuku dengan berbagai desain menarik.</p>
                 </div>
+                <a href="#booking" class="naile-service-arrow">→</a>
+            </div>
+        </article>
 
-                <div class="service-card">
-                    <div class="service-icon">🌸</div>
+        <article class="naile-service-card">
+            <img src="assets/images/03-manicure.jpg" alt="Manicure">
+            <div class="naile-service-info">
+                <div>
                     <h3>Manicure</h3>
-                    <p>
-                        Keep your hands and nails clean,
-                        healthy, and beautiful.
-                    </p>
-                    <a href="#contact">Learn More →</a>
+                    <p>Perawatan kuku tangan agar sehat dan rapi.</p>
                 </div>
+                <a href="#booking" class="naile-service-arrow">→</a>
+            </div>
+        </article>
 
-                <div class="service-card">
-                    <div class="service-icon">🦶</div>
+        <article class="naile-service-card">
+            <img src="assets/images/04-pedicure.jpg" alt="Pedicure">
+            <div class="naile-service-info">
+                <div>
                     <h3>Pedicure</h3>
-                    <p>
-                        Give your feet the care and relaxation
-                        they deserve.
-                    </p>
-                    <a href="#contact">Learn More →</a>
+                    <p>Perawatan kuku kaki untuk kebersihan dan kenyamanan.</p>
                 </div>
+                <a href="#booking" class="naile-service-arrow">→</a>
+            </div>
+        </article>
 
-                <div class="service-card">
-                    <div class="service-icon">✨</div>
+        <article class="naile-service-card">
+            <img src="assets/images/05-eyelash.jpg" alt="Eyelash">
+            <div class="naile-service-info">
+                <div>
                     <h3>Eyelash</h3>
-                    <p>
-                        Enhance your natural beauty with
-                        elegant eyelash treatments.
-                    </p>
-                    <a href="#contact">Learn More →</a>
+                    <p>Perawatan dan pemasangan extension bulu mata.</p>
                 </div>
-
+                <a href="#booking" class="naile-service-arrow">→</a>
             </div>
-        </div>
-    </section>
+        </article>
 
+    </div>
+</section>
 
-    <!-- GALLERY SECTION -->
-    <section class="gallery section-padding" id="gallery">
-        <div class="container">
+<!-- GALLERY -->
+<section class="naile-services" id="gallery">
+    <div class="naile-section-heading">
+        <h2>Our Gallery</h2>
+        <p>Inspirasi kecantikan dari Nailé Beauty Studio ♡</p>
+    </div>
 
-            <div class="section-heading center">
-                <span class="subtitle">OUR PORTFOLIO</span>
-                <h2>Beauty <span>Gallery</span></h2>
-                <p>A little inspiration for your next look.</p>
-            </div>
+    <div class="naile-service-grid">
+        <article class="naile-service-card">
+            <img src="assets/images/02-nail-art.jpg" alt="Nail Art Gallery">
+        </article>
+        <article class="naile-service-card">
+            <img src="assets/images/03-manicure.jpg" alt="Manicure Gallery">
+        </article>
+        <article class="naile-service-card">
+            <img src="assets/images/04-pedicure.jpg" alt="Pedicure Gallery">
+        </article>
+        <article class="naile-service-card">
+            <img src="assets/images/05-eyelash.jpg" alt="Eyelash Gallery">
+        </article>
+    </div>
+</section>
 
-            <div class="gallery-grid">
-                <div class="gallery-item gallery-one">
-                    <span>Elegant Nail Art</span>
-                </div>
+<!-- BOOKING -->
+<section class="naile-services" id="booking">
+    <div class="naile-section-heading">
+        <h2>Book Your Appointment</h2>
+        <p>Jadwalkan perawatan kecantikan favoritmu bersama kami ♡</p>
+        <a href="customer/booking.php" class="naile-button-primary">
+            Booking Sekarang →
+        </a>
+    </div>
+</section>
 
-                <div class="gallery-item gallery-two">
-                    <span>Soft Pink Nails</span>
-                </div>
+<!-- ABOUT -->
+<section class="naile-services" id="about">
+    <div class="naile-section-heading">
+        <h2>About Nailé</h2>
+        <p>
+            Nailé Beauty Studio hadir sebagai tempat perawatan
+            kecantikan yang menyediakan Nail Art, Manicure,
+            Pedicure, dan Eyelash dengan suasana nyaman.
+        </p>
+    </div>
+</section>
 
-                <div class="gallery-item gallery-three">
-                    <span>Beautiful Details</span>
-                </div>
-            </div>
+</main>
 
-        </div>
-    </section>
+<footer class="footer">
+    <p>© 2026 Nailé Beauty Studio. All Rights Reserved.</p>
+</footer>
 
-
-    <!-- CONTACT SECTION -->
-    <section class="contact section-padding" id="contact">
-        <div class="container contact-content">
-
-            <span class="subtitle">LET'S MAKE YOU BEAUTIFUL</span>
-
-            <h2>
-                Ready for Your<br>
-                <span>Beauty Moment?</span>
-            </h2>
-
-            <p>
-                Your beauty journey starts here.
-                We can't wait to welcome you!
-            </p>
-
-            <a href="#services" class="primary-button">
-                Explore Our Services →
-            </a>
-
-        </div>
-    </section>
-
-
-    <!-- FOOTER -->
-    <footer class="footer">
-        <div class="container footer-content">
-
-            <a href="#home" class="logo">
-                Nailé<span>.</span>
-                <small>BEAUTY STUDIO</small>
-            </a>
-
-            <p>
-                © 2026 Nailé Beauty Studio.
-                All Rights Reserved.
-            </p>
-
-            <a href="#home">Back to Top ↑</a>
-
-        </div>
-    </footer>
-
-
-    <!-- JAVASCRIPT -->
-    <script src="assets/js/script.js"></script>
-
+<script src="assets/js/script.js"></script>
 </body>
 </html>

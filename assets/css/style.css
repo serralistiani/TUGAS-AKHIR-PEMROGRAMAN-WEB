@@ -511,3 +511,691 @@ a {
     }
 
 }
+
+/* =========================
+   10. HALAMAN LAYANAN
+========================= */
+
+.layanan-navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 8%;
+    background: #FFF9F6;
+    box-shadow: 0 2px 15px rgba(100, 60, 60, 0.08);
+}
+
+.layanan-logo {
+    font-family: 'Playfair Display', serif;
+    font-size: 27px;
+    font-weight: bold;
+    color: #493B3B;
+    text-decoration: none;
+}
+
+.layanan-logo span {
+    display: block;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 10px;
+    letter-spacing: 3px;
+    color: #B87586;
+}
+
+.layanan-menu {
+    display: flex;
+    gap: 30px;
+}
+
+.layanan-menu a {
+    color: #493B3B;
+    font-size: 14px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.layanan-menu a:hover,
+.layanan-menu a.active {
+    color: #B87586;
+}
+
+.layanan-header {
+    text-align: center;
+    padding: 85px 20px;
+    background: linear-gradient(
+        120deg,
+        #FFF9F6,
+        #F8E6E9,
+        #F5DDE0
+    );
+}
+
+.layanan-header .subtitle {
+    color: #B87586;
+    letter-spacing: 3px;
+    font-weight: bold;
+}
+
+.layanan-header h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 48px;
+    color: #493B3B;
+    margin: 15px 0;
+}
+
+.layanan-header > p:last-child {
+    max-width: 600px;
+    margin: auto;
+    color: #796C6C;
+}
+
+.layanan-section {
+    padding: 75px 8%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+    background: #FFF9F6;
+}
+
+.layanan-card {
+    background: white;
+    padding: 35px 22px;
+    border-radius: 18px;
+    text-align: center;
+    border: 1px solid #F4E5E5;
+    box-shadow: 0 5px 20px rgba(160, 100, 120, 0.08);
+    transition: 0.3s;
+}
+
+.layanan-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 30px rgba(160, 100, 120, 0.15);
+}
+
+.layanan-icon {
+    font-size: 45px;
+    margin-bottom: 15px;
+}
+
+.layanan-card h2 {
+    font-family: 'Playfair Display', serif;
+    color: #B87586;
+    font-size: 23px;
+    margin-bottom: 12px;
+}
+
+.layanan-card p {
+    color: #796C6C;
+    font-size: 14px;
+    line-height: 1.8;
+    min-height: 80px;
+}
+
+.layanan-card a {
+    display: inline-block;
+    background: #D99BA9;
+    color: white;
+    padding: 11px 20px;
+    border-radius: 30px;
+    margin-top: 15px;
+    font-size: 13px;
+    transition: 0.3s;
+}
+
+.layanan-card a:hover {
+    background: #B87586;
+}
+
+.layanan-footer {
+    background: #493B3B;
+    color: white;
+    text-align: center;
+    padding: 25px;
+    font-size: 13px;
+}
+
+/* RESPONSIVE LAYANAN */
+
+@media (max-width: 900px) {
+    .layanan-section {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .layanan-navbar {
+        flex-direction: column;
+        gap: 18px;
+    }
+
+    .layanan-menu {
+        gap: 18px;
+    }
+
+    .layanan-header h1 {
+        font-size: 34px;
+    }
+
+    .layanan-section {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* =========================================
+   NAILE BEAUTY STUDIO - HOME PAGE
+========================================= */
+
+:root {
+    --naile-pink: #c65d78;
+    --naile-dark: #8f304b;
+    --naile-soft: #f9dfe4;
+    --naile-light: #fff8f8;
+    --naile-cream: #fffdfc;
+    --naile-text: #49383b;
+    --naile-border: #f1d5da;
+}
+
+/* GLOBAL */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'DM Sans', sans-serif;
+    background: var(--naile-cream);
+    color: var(--naile-text);
+}
+
+a {
+    text-decoration: none;
+}
+
+
+
+/* NAVBAR */
+.navbar {
+    width: 100%;
+    height: 90px;
+    padding: 0 6%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #fffaf9;
+    position: relative;
+    z-index: 10;
+}
+
+.logo {
+    color: #96364f;
+    font-family: 'Playfair Display', serif;
+    font-size: 32px;
+    font-weight: 700;
+    text-decoration: none;
+    line-height: 1;
+}
+
+.logo span {
+    color: #d99ba9;
+}
+
+.logo small {
+    display: block;
+    margin-top: 7px;
+    color: #80666b;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 10px;
+    letter-spacing: 3px;
+}
+
+.navbar nav {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+}
+
+.navbar nav a {
+    color: #493b3b;
+    font-size: 15px;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.navbar nav a:hover,
+.navbar nav a.active {
+    color: #c34d70;
+}
+
+.nav-buttons {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.nav-buttons a {
+    padding: 12px 25px;
+    border: 1px solid #b63f5d;
+    border-radius: 25px;
+    color: #a33c58;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.nav-buttons a:last-child {
+    color: white;
+    background: #b63f5d;
+}
+
+@media (max-width: 850px) {
+    .navbar {
+        height: auto;
+        padding: 18px 5%;
+        flex-wrap: wrap;
+        gap: 18px;
+    }
+
+    .navbar nav {
+        gap: 15px;
+        flex-wrap: wrap;
+    }
+}
+
+/* HERO */
+
+.naile-hero {
+    min-height: 425px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    overflow: hidden;
+    background: linear-gradient(110deg, #fce8ec, #f8dce2);
+}
+
+.naile-hero-content {
+    padding: 65px 8% 35px 11%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    background:
+        radial-gradient(circle at 10% 20%, #fff8f8 0, transparent 35%),
+        linear-gradient(120deg, #fce8ec, #f8dce2);
+}
+
+.naile-welcome {
+    color: #bd526e;
+    font-weight: 700;
+    font-size: 16px;
+    letter-spacing: 4px;
+    margin-bottom: 18px;
+}
+
+.naile-hero-content h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(42px, 5vw, 55px);
+    font-weight: 600;
+    font-style: italic;
+    line-height: 1.08;
+    color: #8d3049;
+    white-space: nowrap;
+}
+
+.hero-heart {
+    display: inline-block;
+    font-size: 0.8em;
+    font-weight: 400;
+    margin-left: 5px;
+}
+
+.naile-hero-content > p {
+    max-width: 520px;
+    color: #443438;
+    font-size: 18px;
+    line-height: 1.7;
+    margin-top: 18px;
+}
+
+.naile-hero-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    margin-top: 30px;
+}
+
+.naile-button-primary,
+.naile-button-outline {
+    min-height: 58px;
+    padding: 0 30px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    border-radius: 20px;
+    font-size: 16px;
+    font-weight: 700;
+    transition: 0.3s;
+}
+
+.naile-button-primary {
+    color: white;
+    background: linear-gradient(135deg, #cf6983, #b94362);
+    box-shadow: 0 5px 12px rgba(170, 65, 91, 0.15);
+}
+
+.naile-button-outline {
+    color: #9e3e58;
+    border: 1.5px solid #bd526e;
+    background: rgba(255, 255, 255, 0.35);
+}
+
+.naile-button-primary:hover,
+.naile-button-outline:hover {
+    transform: translateY(-3px);
+}
+
+.naile-slider-dots {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin-top: 25px;
+}
+
+.naile-slider-dots span {
+    width: 14px;
+    height: 14px;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 50%;
+}
+
+.naile-slider-dots span.active {
+    background: #b94362;
+}
+
+
+/* HERO PHOTO */
+
+
+/* HERO PHOTO */
+
+.naile-hero-photo {
+    min-height: 425px;
+    position: relative;
+    background-image: url('../images/01-home-hero.jpg');
+    background-size: cover;
+    background-position: center 42%;
+}
+
+.naile-hero-photo::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        to right,
+        #f8dce2 0%,
+        rgba(248, 220, 226, 0.85) 12%,
+        rgba(248, 220, 226, 0.35) 35%,
+        transparent 65%
+    );
+}
+
+/* SERVICES */
+
+.naile-services {
+    padding: 35px 5% 55px;
+    background: linear-gradient(180deg, #fffdfc, #fff7f7);
+}
+
+.naile-section-heading {
+    text-align: center;
+    margin-bottom: 28px;
+}
+
+.naile-section-heading h2 {
+    display: inline-block;
+    position: relative;
+    font-family: 'Playfair Display', serif;
+    color: #8f304b;
+    font-size: 38px;
+    margin-bottom: 12px;
+}
+
+.naile-section-heading h2::before,
+.naile-section-heading h2::after {
+    content: "";
+    display: inline-block;
+    width: 65px;
+    height: 1px;
+    background: #c65d78;
+    vertical-align: middle;
+    margin: 0 22px;
+}
+
+.naile-section-heading p {
+    font-size: 17px;
+    color: #76575d;
+}
+
+.naile-service-grid {
+    max-width: 1450px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 20px;
+}
+
+.naile-service-card {
+    overflow: hidden;
+    background: white;
+    border: 1px solid #f2d9de;
+    border-radius: 22px;
+    box-shadow: 0 4px 8px rgba(137, 62, 80, 0.12);
+    transition: 0.3s;
+}
+
+.naile-service-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 9px 20px rgba(137, 62, 80, 0.16);
+}
+
+.naile-service-card > img {
+    width: 100%;
+    height: 145px;
+    display: block;
+    object-fit: cover;
+    object-position: center;
+}
+
+.naile-service-info {
+    min-height: 100px;
+    padding: 13px 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+    background: linear-gradient(120deg, #fffafa, #fff1f3);
+}
+
+.naile-service-info h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 20px;
+    color: #49383b;
+    margin-bottom: 7px;
+}
+
+.naile-service-info p {
+    max-width: 235px;
+    font-size: 13px;
+    line-height: 1.5;
+    color: #695459;
+}
+
+.naile-service-arrow {
+    width: 43px;
+    height: 43px;
+    min-width: 43px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #fce0e6;
+    color: #a83e5b;
+    border-radius: 50%;
+    font-size: 25px;
+    transition: 0.3s;
+}
+
+.naile-service-arrow:hover {
+    background: #c65d78;
+    color: white;
+}
+
+
+/* RESPONSIVE */
+
+@media (max-width: 1050px) {
+
+    .naile-nav-container {
+        gap: 15px;
+    }
+
+    .naile-nav-menu {
+        gap: 15px;
+    }
+
+    .naile-nav-menu a {
+        font-size: 12px;
+    }
+
+    .naile-login,
+    .naile-register {
+        padding: 10px 15px;
+        font-size: 12px;
+    }
+
+    .naile-service-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
+@media (max-width: 768px) {
+
+    .naile-nav-container {
+        min-height: 75px;
+    }
+
+    .naile-logo strong {
+        font-size: 23px;
+    }
+
+    .naile-logo-icon {
+        font-size: 32px;
+    }
+
+    .naile-nav-actions {
+        display: none;
+    }
+
+    .naile-menu-toggle {
+        display: block;
+    }
+
+    .naile-nav-menu {
+        display: none;
+        position: absolute;
+        top: 75px;
+        left: 4%;
+        right: 4%;
+        padding: 22px;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 22px;
+        background: white;
+        border: 1px solid var(--naile-border);
+        border-radius: 15px;
+        box-shadow: 0 8px 20px rgba(100, 40, 60, 0.12);
+    }
+
+    .naile-nav-menu.show {
+        display: flex;
+    }
+.naile-hero-photo::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        to right,
+        #f8dce3 0%,
+        rgba(248, 220, 227, 0.65) 15%,
+        rgba(248, 220, 227, 0.15) 40%,
+        transparent 65%
+    );
+}
+
+
+    .naile-section-heading h2 {
+        font-size: 30px;
+    }
+
+    .naile-section-heading h2::before,
+    .naile-section-heading h2::after {
+        width: 25px;
+        margin: 0 8px;
+    }
+
+    .naile-service-grid {
+        gap: 13px;
+    }
+
+    .naile-service-card > img {
+        height: 125px;
+    }
+
+    .naile-service-info {
+        min-height: 125px;
+        padding: 10px;
+    }
+
+    .naile-service-info h3 {
+        font-size: 17px;
+    }
+
+    .naile-service-info p {
+        font-size: 11px;
+    }
+
+    .naile-service-arrow {
+        width: 34px;
+        height: 34px;
+        min-width: 34px;
+    }
+}
+
+
+@media (max-width: 420px) {
+
+    .naile-service-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .naile-service-card > img {
+        height: 190px;
+    }
+
+    .naile-service-info {
+        min-height: 90px;
+    }
+
+    .naile-hero-content h1 {
+        font-size: 40px;
+    }
+
+    .naile-button-primary,
+    .naile-button-outline {
+        width: 100%;
+        min-height: 52px;
+    }
+}
