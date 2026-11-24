@@ -21,13 +21,13 @@
         <small>BEAUTY STUDIO</small>
     </a>
 
-    <nav>
-        <a href="#home" class="active">Home</a>
-        <a href="#services">Services</a>
-        <a href="#gallery">Gallery</a>
-        <a href="#booking">Booking</a>
-        <a href="#about">About</a>
-    </nav>
+  <nav>
+    <a href="index.php" class="active">Home</a>
+    <a href="customer/services.php">Services</a>
+    <a href="customer/gallery.php">Gallery</a>
+    <a href="customer/booking.php">Booking</a>
+    <a href="customer/about.php">About</a>
+</nav>
 
     <div class="nav-buttons">
         <a href="customer/login.php">Login</a>
