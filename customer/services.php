@@ -1,11 +1,10 @@
-
 <!DOCTYPE html>
 <html lang="id">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Services | Nailé Beauty Studio</title>
-
+    
     <style>
         * {
             box-sizing: border-box;
@@ -18,72 +17,99 @@
             color: #75434d;
         }
 
-        /* NAVBAR */
-        .services-navbar {
-            min-height: 72px;
-            padding: 10px 4%;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            background: #f9dce3;
-            box-shadow: 0 2px 12px rgba(140, 75, 90, 0.08);
-        }
+       
+/* =========================
+   NAVBAR SERVICES - NAILE
+========================= */
 
-        .services-logo {
-            color: #783f4a;
-            font-family: Georgia, serif;
-            font-size: 27px;
-            font-weight: bold;
-            text-decoration: none;
-            line-height: 1;
-        }
+.services-navbar {
+    width: 100%;
+    min-height: 90px;
+    padding: 0 6%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #F9E3E8;
+    box-shadow: 0 2px 15px rgba(100, 60, 60, 0.08);
+}
 
-        .services-logo span {
-            color: #c87587;
-        }
+/* LOGO */
+.services-logo {
+    color: #70404D;
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: 30px;
+    font-weight: 700;
+    text-decoration: none;
+    line-height: 1;
+}
 
-        .services-logo small {
-            display: block;
-            font-family: Arial, sans-serif;
-            font-size: 9px;
-            letter-spacing: 2px;
-            text-align: center;
-            margin-top: 5px;
-        }
+.services-logo span {
+    color: #C8758C;
+}
 
-        .services-navbar nav {
-            display: flex;
-            align-items: center;
-            gap: 28px;
-        }
+.services-logo small {
+    display: block;
+    margin-top: 7px;
+    color: #80666B;
+    font-family: 'DM Sans', Arial, sans-serif;
+    font-size: 9px;
+    letter-spacing: 3px;
+    text-align: center;
+}
 
-        .services-navbar nav a {
-            color: #70434b;
-            font-size: 13px;
-            text-decoration: none;
-            padding: 9px 0;
-            transition: 0.3s;
-        }
+/* MENU */
+.services-navbar nav {
+    display: flex;
+    align-items: center;
+    gap: 36px;
+}
 
-        .services-navbar nav a.active,
-        .services-navbar nav a:hover {
-            color: #b85e73;
-            border-bottom: 2px solid #c87587;
-        }
+.services-navbar nav a {
+    color: #70404D;
+    font-family: 'DM Sans', Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    text-decoration: none;
+    padding: 9px 0;
+    transition: 0.3s;
+}
 
-        .navbar-book-btn {
-            padding: 11px 23px;
-            background: #c87587;
-            color: white;
-            border-radius: 30px;
-            text-decoration: none;
-            font-size: 12px;
-            transition: 0.3s;
-        }
+.services-navbar nav a.active,
+.services-navbar nav a:hover {
+    color: #C65F7D;
+    border-bottom: 2px solid #C8758C;
+}
 
-        .navbar-book-btn:hover {
-            background: #a95469;
-        }
+/* BOOKING BUTTON */
+.navbar-book-btn {
+    padding: 11px 23px;
+    background: #C8758C;
+    color: white;
+    border-radius: 30px;
+    text-decoration: none;
+    font-family: 'DM Sans', Arial, sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.navbar-book-btn:hover {
+    background: #C65F7D;
+}
+
+/* RESPONSIVE */
+@media (max-width: 850px) {
+    .services-navbar {
+        padding: 15px 5%;
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    .services-navbar nav {
+        gap: 18px;
+        flex-wrap: wrap;
+    }
+}
 
         /* SERVICES */
         .services-main {

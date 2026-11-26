@@ -7,8 +7,8 @@ $gallery = [
     ["file" => "nail-art/nailart-03.jpg", "category" => "nail-art", "title" => "Nude Floral"],
     ["file" => "nail-art/nailart-04.jpg", "category" => "nail-art", "title" => "Pearl Elegance"],
     ["file" => "nail-art/nailart-05.jpg", "category" => "nail-art", "title" => "Pink Blossom"],
-    ["file" => "nail-art/nailart-06.jpg", "category" => "nail-art", "title" => "French Tip"],
-    ["file" => "nail-art/nailart-07.jpg", "category" => "nail-art", "title" => "Glitter Charm"],
+    ["file" => "nail-art/nailart-06.jpg", "category" => "nail-art", "title" => "Burgundy Floral Elegance"],
+    ["file" => "nail-art/nailart-07.jpg", "category" => "nail-art", "title" => "Mocha Bloom"],
     ["file" => "nail-art/nailart-08.jpg", "category" => "nail-art", "title" => "Soft Nude"],
 
     // MANICURE
@@ -55,73 +55,100 @@ $gallery = [
             color: #794650;
         }
 
-        /* NAVBAR */
-        .gallery-navbar {
-            width: 100%;
-            min-height: 80px;
-            padding: 12px 4%;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            background: #f9dce3;
-            box-shadow: 0 3px 12px rgba(130, 70, 85, 0.08);
-        }
+       
+/* =========================
+   NAVBAR GALLERY - NAILE
+========================= */
 
-        .gallery-logo {
-            text-decoration: none;
-            color: #814451;
-            font-family: Georgia, serif;
-            font-size: 32px;
-            font-weight: bold;
-            line-height: 1;
-        }
+.gallery-navbar {
+    width: 100%;
+    min-height: 90px;
+    padding: 0 6%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #F9E3E8;
+    box-shadow: 0 2px 15px rgba(100, 60, 60, 0.08);
+}
 
-        .gallery-logo span {
-            color: #c8798d;
-        }
+/* LOGO */
+.gallery-logo {
+    text-decoration: none;
+    color: #70404D;
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 1;
+}
 
-        .gallery-logo small {
-            display: block;
-            margin-top: 5px;
-            font-family: Arial, sans-serif;
-            font-size: 10px;
-            letter-spacing: 3px;
-            text-align: center;
-        }
+.gallery-logo span {
+    color: #C8758C;
+}
 
-        .gallery-nav {
-            display: flex;
-            align-items: center;
-            gap: 35px;
-        }
+.gallery-logo small {
+    display: block;
+    margin-top: 7px;
+    color: #80666B;
+    font-family: 'DM Sans', Arial, sans-serif;
+    font-size: 9px;
+    letter-spacing: 3px;
+    text-align: center;
+}
 
-        .gallery-nav a {
-            text-decoration: none;
-            color: #794650;
-            font-size: 15px;
-            padding: 10px 0;
-            transition: 0.3s;
-        }
+/* MENU */
+.gallery-nav {
+    display: flex;
+    align-items: center;
+    gap: 36px;
+}
 
-        .gallery-nav a:hover,
-        .gallery-nav a.active {
-            color: #c66f85;
-            border-bottom: 2px solid #c66f85;
-        }
+.gallery-nav a {
+    text-decoration: none;
+    color: #70404D;
+    font-family: 'DM Sans', Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 9px 0;
+    transition: 0.3s;
+}
 
-        .gallery-book-btn {
-            text-decoration: none;
-            background: #c8798d;
-            color: white;
-            padding: 13px 27px;
-            border-radius: 30px;
-            transition: 0.3s;
-        }
+.gallery-nav a:hover,
+.gallery-nav a.active {
+    color: #C65F7D;
+    border-bottom: 2px solid #C8758C;
+}
 
-        .gallery-book-btn:hover {
-            background: #ad6075;
-            transform: translateY(-2px);
-        }
+/* BOOKING BUTTON */
+.gallery-book-btn {
+    text-decoration: none;
+    background: #C8758C;
+    color: white;
+    padding: 11px 23px;
+    border-radius: 30px;
+    font-family: 'DM Sans', Arial, sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.gallery-book-btn:hover {
+    background: #C65F7D;
+}
+
+/* RESPONSIVE */
+@media (max-width: 850px) {
+    .gallery-navbar {
+        padding: 15px 5%;
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    .gallery-nav {
+        gap: 18px;
+        flex-wrap: wrap;
+    }
+}
+
 
         /* GALLERY HEADER */
         .gallery-container {
